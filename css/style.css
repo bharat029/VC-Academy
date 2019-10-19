@@ -35,3 +35,13 @@ iframe {
     height: 65vh;
   }
 }
+
+#note {
+  border: 1px solid blue;
+  padding: 0 15px;
+}
+
+#note h2 {
+  margin: 0;
+  font-size: 2.25rem;
+}
