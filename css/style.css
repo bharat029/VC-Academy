@@ -14,6 +14,10 @@ h1 {
   font-size: 3rem;
 }
 
+main {
+  background: blue;
+}
+
 main div {
   padding: 30px;
 }
@@ -24,9 +28,14 @@ main div h4 {
 }
 
 iframe {
-  min-height: 160px;
-  min-width: 280px;
-  width: 50vw;
-  height: 25vw;
-  margin: 30px auto;
+  min-height: 160px !important;
+  min-width: 280px !important;
+  width: 100%;
+  height: 30vh;
+}
+
+@media only screen and (min-width: 900px) {
+  iframe {
+    height: 65vh;
+  }
 }
