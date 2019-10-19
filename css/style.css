@@ -2,12 +2,21 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 0 30px;
 }
 
 .nav-wrapper a {
   display: block;
   height: 100%;
+  padding: 0 15px;
+}
+
+#logo {
+  flex: 3;
+}
+
+#logo a {
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 h1 {
@@ -33,6 +42,10 @@ iframe {
 @media only screen and (min-width: 900px) {
   iframe {
     height: 65vh;
+  }
+
+  #logo a {
+    width: 50%;
   }
 }
 
