@@ -22,7 +22,7 @@
           <a class="indigo-text text-darken-4" href="index.html" class="brand-logo">VC-Academy</a>
         </div>
         <div id="dropdown-btn">
-          <a href="#" class="dropdown-trigger indigo-text text-darken-4" data-target="dropdown">Dropdown <i class="material-icons right">arrow_drop_down</i></a>
+          <a href="#" role="button" class="dropdown-trigger indigo-text text-darken-4" data-target="dropdown" aria-expanded="false">Dropdown <i class="material-icons right">arrow_drop_down</i></a>
         </div>
       </div>
     </nav>
@@ -46,9 +46,27 @@
       </div>
 
       <div>
-        <h4>Video from CS50 </h4>
+        <h4>Video from CS50</h4>
         <p>Best video to understand the consept of HTML and CSS in detail.</p>
         <iframe src="https://www.youtube.com/embed/XQs5KcUj-Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <h4>Semantics in HTML5</h4>
+        <p>Here are some usefull links for HTML 5 Semantics.</p>
+
+        <ul class="browser-default">
+          <li>
+            <a href="https://guide.freecodecamp.org/html/html5-semantic-elements/">FreeCodeCamp</a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools</a>
+          </li>
+          <li>
+            <a href="https://www.geeksforgeeks.org/html5-semantics/">GeeksForGeeks</a>
+          </li>
+        </ul>
+        
       </div>
 
       <div>
@@ -63,7 +81,8 @@
     
     <script src="js/materialize.min.js"></script>
     <script>
-      M.AutoInit()
+      const elems = document.querySelector('.dropdown-trigger')
+      M.Dropdown.init(elems, { coverTrigger: false, onOpenStart: () => elems.setAttribute('aria-expanded', true), onCloseEnd: () => elems.setAttribute('aria-expanded', false) })
     </script>
   </body>
 </html>
