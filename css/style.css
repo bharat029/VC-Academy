@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 50px;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-around;
@@ -50,11 +54,20 @@ iframe {
 }
 
 #note {
+  margin-top: 75px;
   border: 1px solid blue;
   padding: 0 15px;
 }
 
-#note h2 {
+#note div {
   margin: 0;
   font-size: 2.25rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: none;
+  background: inherit !important;
 }
